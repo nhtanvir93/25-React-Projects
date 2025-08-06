@@ -1,0 +1,27 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.circleContainer {
+  display: flex;
+  gap: 5px;
+}
+
+.circle {
+  background-color: #00ff7f;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  transition: background-color 0.3s ease-in;
+}
+
+.circleActive {
+  background-color: #106feb;
+}
