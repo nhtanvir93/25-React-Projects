@@ -39,13 +39,15 @@ export function Accordion() {
     <div>
       <h2 className={styles.componentHeader}>Accordion</h2>
 
-      <div className={styles.toggleCheckbox}>
+      <div className={styles.toggleCheckboxContainer}>
         <input
+          className={styles.toggleCheckbox}
+          id="toggle-selection"
           type="checkbox"
           onChange={toggleMode}
           checked={isSingleSelection}
-        />{" "}
-        Single Selection
+        />
+        <label htmlFor="toggle-selection">Single Selection</label>
       </div>
 
       {accordions &&
