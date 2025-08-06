@@ -1,6 +1,7 @@
 import "./App.css";
 import { Accordion } from "./components/Accordion";
 import ImageSlider from "./components/ImageSlider";
+import LoadMoreProductss from "./components/LoadMoreProducts";
 import RandomColor from "./components/RandomColor";
 import StarRating from "./components/StarRating";
 
@@ -10,7 +11,8 @@ function App() {
       {/* <Accordion /> */}
       {/* <RandomColor /> */}
       {/* <StarRating /> */}
-      <ImageSlider />
+      {/* <ImageSlider /> */}
+      <LoadMoreProductss />
     </div>
   );
 }
