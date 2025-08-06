@@ -1,0 +1,58 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.colorModeTitleContainer {
+  border-radius: 4px;
+  padding: 12px 20px;
+}
+
+.colorModeTitle {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.colorCodeTitleContainer {
+  border-radius: 4px;
+  padding: 12px 20px;
+}
+
+.colorCodeTitle {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.btnContainer {
+  padding: 50px;
+}
+
+.applyColorBtn {
+  background-color: #5f9ea0;
+  border-radius: 4px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 12px 28px;
+  transition: all 0.3s linear;
+}
+
+.applyColorBtn:hover {
+  opacity: 0.98;
+  transform: scale(0.98);
+}
+
+.applyHexColorBtn {
+  background-color: #5f70a0;
+}
+
+.applyRgbColorBtn {
+  background-color: #785fa0;
+}
