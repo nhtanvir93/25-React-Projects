@@ -12,7 +12,7 @@ const StarRating = () => {
     <div className={styles.container}>
       <h3>Provide Rating</h3>
       <div className={styles.circleContainer}>
-        {circles.map((circle, idx) => (
+        {circles.map((_, idx) => (
           <div
             title={focused === idx ? (idx + 1).toString() : ""}
             key={`circle-` + idx}
