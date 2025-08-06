@@ -1,0 +1,80 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.header {
+  font-size: 42px;
+  font-weight: 100;
+  margin: 2rem;
+  text-align: center;
+}
+
+.sliderContainer {
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.1);
+  height: 500px;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: absolute;
+  top: calc(50% - 30px);
+  width: calc(100% - 20px);
+}
+
+.arrowIcon {
+  color: rgba(128, 128, 128, 0.8);
+  cursor: pointer;
+  font-size: 60px;
+}
+
+.circleDirectionContainer {
+  align-items: center;
+  bottom: 15px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.circleIcon {
+  background-color: rgba(128, 128, 128, 0.8);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.activeCircleIcon {
+  background-color: #fff;
+}
+
+.currentImageContainer {
+  padding: 6px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: display 0.5s ease;
+}
+
+.hide {
+  display: none;
+}

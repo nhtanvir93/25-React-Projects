@@ -1,5 +1,6 @@
 import "./App.css";
 import { Accordion } from "./components/Accordion";
+import ImageSlider from "./components/ImageSlider";
 import RandomColor from "./components/RandomColor";
 import StarRating from "./components/StarRating";
 
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       {/* <Accordion /> */}
       {/* <RandomColor /> */}
-      <StarRating />
+      {/* <StarRating /> */}
+      <ImageSlider />
     </div>
   );
 }
