@@ -1,0 +1,44 @@
+.componentHeader {
+  font-size: 50px;
+  font-weight: 200;
+  margin-bottom: 4rem;
+}
+
+.accordionContainer {
+  --accordion-color: rgba(143, 192, 235, 0.7);
+
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.accordionTitleContainer {
+  align-items: center;
+  background-color: var(--accordion-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
+.accordionDescriptionContainer {
+  border: 1px solid transparent;
+  max-height: 0;
+  opacity: 0;
+  padding: 0 20px;
+  transition: all 0.2s linear;
+}
+
+.accordionDescriptionContainerOpen {
+  border: 1px solid var(--accordion-color);
+  max-height: 100vh;
+  opacity: 1;
+  padding: 8px 20px;
+}
+
+.toggleCheckbox {
+  margin: 20px;
+}
