@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./ImageSlider.module.css";
 
 const images = [
@@ -12,19 +12,32 @@ const images = [
 
 const ImageSlider = () => {
   const [current, setCurrent] = useState(0);
+  const [focused, setFocused] = useState(false);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (!focused) handleClickNext();
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [focused]);
 
   function handleClickNext() {
-    setCurrent(current + 1 >= images.length ? 0 : current + 1);
+    setCurrent((prev) => (prev + 1 >= images.length ? 0 : prev + 1));
   }
 
   function handleClickPrevious() {
-    setCurrent(current - 1 < 0 ? images.length - 1 : current - 1);
+    setCurrent((prev) => (prev - 1 < 0 ? images.length - 1 : prev - 1));
   }
 
   return (
     <div className={styles.container}>
       <h3 className={styles.header}>Image Slider</h3>
-      <div className={styles.sliderContainer}>
+      <div
+        className={styles.sliderContainer}
+        onMouseLeave={() => setFocused(false)}
+        onMouseEnter={() => setFocused(true)}
+      >
         <div className={styles.currentImageContainer}>
           {images.map((image, idx) => (
             <img
