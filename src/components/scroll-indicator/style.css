@@ -1,0 +1,36 @@
+.container {
+  padding: 40px;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 200;
+  margin: 20px 0;
+}
+
+.list-item-container {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.list-item {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.list-item:nth-child(n + 1) {
+  margin-top: -1px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: rgb(14, 238, 163);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.3s linear;
+}

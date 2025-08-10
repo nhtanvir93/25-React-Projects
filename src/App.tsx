@@ -5,6 +5,7 @@ import LoadMoreProductss from "./components/LoadMoreProducts";
 import MenuBar from "./components/menu-bar";
 import QrCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/RandomColor";
+import ScrollIndicator from "./components/scroll-indicator";
 import StarRating from "./components/StarRating";
 import ThemeSwitch from "./components/theme-switch";
 
@@ -18,7 +19,8 @@ function App() {
       {/* <LoadMoreProductss /> */}
       {/* <MenuBar /> */}
       {/* <QrCodeGenerator /> */}
-      <ThemeSwitch />
+      {/* <ThemeSwitch /> */}
+      <ScrollIndicator />
     </div>
   );
 }
