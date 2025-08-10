@@ -6,6 +6,7 @@ import MenuBar from "./components/menu-bar";
 import QrCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/RandomColor";
 import StarRating from "./components/StarRating";
+import ThemeSwitch from "./components/theme-switch";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <ImageSlider /> */}
       {/* <LoadMoreProductss /> */}
       {/* <MenuBar /> */}
-      <QrCodeGenerator />
+      {/* <QrCodeGenerator /> */}
+      <ThemeSwitch />
     </div>
   );
 }
