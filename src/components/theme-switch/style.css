@@ -1,12 +1,14 @@
 :root {
   --light-dark-bgcolor: #fff;
   --light-dark-btn-color: rgb(93, 93, 219);
+  --light-dark-btn-hover-color: rgb(93, 93, 219, 0.7);
   --light-dark-text: #000;
 }
 
 [data-theme="dark"] {
   --light-dark-bgcolor: #000;
   --light-dark-btn-color: rgb(93, 219, 93);
+  --light-dark-btn-hover-color: rgb(93, 219, 93, 0.7);
   --light-dark-text: #fff;
 }
 
@@ -18,14 +20,17 @@
   gap: 30px;
   height: 100vh;
   justify-content: center;
+  transition: all 0.3s linear;
   width: 100%;
 }
 
 .header {
-  margin: 0;
   color: var(--light-dark-text);
   font-size: 40px;
   font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  transition: all 0.3s linear;
 }
 
 .toggle-btn {
@@ -36,4 +41,9 @@
   cursor: pointer;
   font-size: 16px;
   padding: 12px 26px;
+  transition: all 0.3s linear;
+}
+
+.toggle-btn:hover {
+  background-color: var(--light-dark-btn-hover-color);
 }
