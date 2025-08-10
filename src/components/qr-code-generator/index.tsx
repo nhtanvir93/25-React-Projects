@@ -21,7 +21,7 @@ const QrCodeGenerator = () => {
       </div>
       {qrCode && (
         <div className="qrcode">
-          <QRCode value={qrCode} />
+          <QRCode value={qrCode} size={350} />
         </div>
       )}
     </div>
