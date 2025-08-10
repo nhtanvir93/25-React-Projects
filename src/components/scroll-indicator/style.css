@@ -28,9 +28,10 @@
 
 .progress-bar {
   height: 10px;
-  background-color: rgb(14, 238, 163);
+  background-color: rgb(7, 164, 255);
+  box-shadow: 0 3px 6px rgba(128, 128, 128, 0.3);
   position: fixed;
   top: 0;
   left: 0;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
 }

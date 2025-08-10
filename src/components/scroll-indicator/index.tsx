@@ -43,9 +43,7 @@ const ScrollIndicator = () => {
       const html = document.documentElement;
       const scrollHeight = html.scrollHeight - html.clientHeight;
       const scrollTop = html.scrollTop;
-      const traversePencentage = parseInt(
-        ((scrollTop / scrollHeight) * 100).toFixed(2)
-      );
+      const traversePencentage = (scrollTop / scrollHeight) * 100;
 
       setScrollTraversed(traversePencentage);
     });
