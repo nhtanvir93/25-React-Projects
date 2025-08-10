@@ -7,6 +7,7 @@ import QrCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/RandomColor";
 import ScrollIndicator from "./components/scroll-indicator";
 import StarRating from "./components/StarRating";
+import Tabs from "./components/tabs";
 import ThemeSwitch from "./components/theme-switch";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
       {/* <MenuBar /> */}
       {/* <QrCodeGenerator /> */}
       {/* <ThemeSwitch /> */}
-      <ScrollIndicator />
+      {/* <ScrollIndicator /> */}
+      <Tabs />
     </div>
   );
 }

@@ -1,0 +1,29 @@
+.heading {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.tabs {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.tab-item {
+  background-color: rgb(51, 157, 250);
+  color: #fff;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.tab-item:hover {
+  background-color: rgb(72, 90, 255);
+}
+
+.tab-item.active {
+  background-color: rgb(72, 90, 255);
+  cursor: not-allowed;
+}
