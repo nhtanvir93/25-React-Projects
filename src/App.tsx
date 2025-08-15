@@ -1,5 +1,6 @@
 import "./App.css";
 import { Accordion } from "./components/Accordion";
+import GithubProfile from "./components/github-profile";
 import ImageSlider from "./components/ImageSlider";
 import LoadMoreProductss from "./components/LoadMoreProducts";
 import MenuBar from "./components/menu-bar";
@@ -24,7 +25,8 @@ function App() {
       {/* <ThemeSwitch /> */}
       {/* <ScrollIndicator /> */}
       {/* <Tabs /> */}
-      <ModalPopup />
+      {/* <ModalPopup /> */}
+      <GithubProfile />
     </div>
   );
 }
