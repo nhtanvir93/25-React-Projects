@@ -3,6 +3,7 @@ import { Accordion } from "./components/Accordion";
 import ImageSlider from "./components/ImageSlider";
 import LoadMoreProductss from "./components/LoadMoreProducts";
 import MenuBar from "./components/menu-bar";
+import ModalPopup from "./components/modal-popup";
 import QrCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/RandomColor";
 import ScrollIndicator from "./components/scroll-indicator";
@@ -22,7 +23,8 @@ function App() {
       {/* <QrCodeGenerator /> */}
       {/* <ThemeSwitch /> */}
       {/* <ScrollIndicator /> */}
-      <Tabs />
+      {/* <Tabs /> */}
+      <ModalPopup />
     </div>
   );
 }
