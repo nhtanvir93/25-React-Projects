@@ -12,6 +12,7 @@ import SearchAutocomplete from "./components/search-autocomplete";
 import StarRating from "./components/StarRating";
 import Tabs from "./components/tabs";
 import ThemeSwitch from "./components/theme-switch";
+import TicTacToe from "./components/tic-tac-toe";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/* <Tabs /> */}
       {/* <ModalPopup /> */}
       {/* <GithubProfile /> */}
-      <SearchAutocomplete />
+      {/* <SearchAutocomplete /> */}
+      <TicTacToe />
     </div>
   );
 }
