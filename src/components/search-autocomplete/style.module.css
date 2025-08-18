@@ -1,0 +1,80 @@
+.searchContainer {
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+
+.form {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+.formControlContainer {
+  width: 400px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.formControl {
+  border: none;
+  height: 36px;
+  width: 100%;
+  padding: 0 16px;
+  font-size: inherit;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.btn {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  height: 36px;
+  width: 80px;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.formControl:focus {
+  outline: 0;
+}
+
+.suggestionContainer {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 35px;
+  left: 0;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin: 0;
+  z-index: 2;
+}
+
+.suggestions li {
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.suggestions li:not(:last-child) {
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.suggestions li:last-child {
+  padding: 8px 16px;
+}
+
+.suggestions li:hover {
+  background-color: rgb(237, 252, 252);
+}
+
+.suggesstionTitle {
+  text-align: left;
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 14px;
+}

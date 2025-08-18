@@ -8,6 +8,7 @@ import ModalPopup from "./components/modal-popup";
 import QrCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/RandomColor";
 import ScrollIndicator from "./components/scroll-indicator";
+import SearchAutocomplete from "./components/search-autocomplete";
 import StarRating from "./components/StarRating";
 import Tabs from "./components/tabs";
 import ThemeSwitch from "./components/theme-switch";
@@ -26,7 +27,8 @@ function App() {
       {/* <ScrollIndicator /> */}
       {/* <Tabs /> */}
       {/* <ModalPopup /> */}
-      <GithubProfile />
+      {/* <GithubProfile /> */}
+      <SearchAutocomplete />
     </div>
   );
 }
