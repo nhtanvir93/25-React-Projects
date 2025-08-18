@@ -32,6 +32,11 @@ const SearchAutocomplete = () => {
     search(searchKey);
   };
 
+  const handleRecipeClick = (selected: string) => {
+    setSearchKey(selected);
+    setRecipies([]);
+  };
+
   return (
     <div>
       <div className={styles.searchContainer}>
@@ -45,7 +50,13 @@ const SearchAutocomplete = () => {
               placeholder="Search ..."
             />
             {recipies.length > 0 && (
-              <Suggestions searchKey={filterKey} recipies={recipies} />
+              <Suggestions
+                onRecipeClick={(selected: string) =>
+                  handleRecipeClick(selected)
+                }
+                searchKey={filterKey}
+                recipies={recipies}
+              />
             )}
           </div>
           <button type="submit" className={styles.btn}>

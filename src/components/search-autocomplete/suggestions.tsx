@@ -5,9 +5,10 @@ import styles from "./style.module.css";
 interface Props {
   recipies: Recipe[];
   searchKey: string;
+  onRecipeClick: (selected: string) => void;
 }
 
-const Suggestions = ({ recipies, searchKey }: Props) => {
+const Suggestions = ({ recipies, searchKey, onRecipeClick }: Props) => {
   const formattedRecipe = (recipe: string): ReactNode => {
     let first = recipe.toLowerCase().indexOf(searchKey.trim().toLowerCase());
     let last = first + (searchKey.length - 1);
@@ -32,7 +33,9 @@ const Suggestions = ({ recipies, searchKey }: Props) => {
       <h3 className={styles.suggesstionTitle}>Suggestions</h3>
       <ul className={styles.suggestions}>
         {recipies.map((recipe) => (
-          <li key={recipe.id}>{formattedRecipe(recipe.name)}</li>
+          <li key={recipe.id} onClick={() => onRecipeClick(recipe.name)}>
+            {formattedRecipe(recipe.name)}
+          </li>
         ))}
       </ul>
     </div>
