@@ -12,8 +12,10 @@ const searchAPI = "https://dummyjson.com/recipes/search?q=";
 const SearchAutocomplete = () => {
   const [searchKey, setSearchKey] = useState("");
   const [recipies, setRecipies] = useState<Recipe[]>([]);
+  const [filterKey, setFilterKey] = useState("");
 
   const search = async (newSearchKey: string) => {
+    setFilterKey(newSearchKey);
     try {
       const res = await fetch(searchAPI + newSearchKey.trim().toLowerCase());
       if (!res.ok) throw new Error("No search result found");
@@ -43,7 +45,7 @@ const SearchAutocomplete = () => {
               placeholder="Search ..."
             />
             {recipies.length > 0 && (
-              <Suggestions searchKey={searchKey} recipies={recipies} />
+              <Suggestions searchKey={filterKey} recipies={recipies} />
             )}
           </div>
           <button type="submit" className={styles.btn}>
