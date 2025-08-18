@@ -42,7 +42,9 @@ const SearchAutocomplete = () => {
               className={styles.formControl}
               placeholder="Search ..."
             />
-            {recipies.length > 0 && <Suggestions recipies={recipies} />}
+            {recipies.length > 0 && (
+              <Suggestions searchKey={searchKey} recipies={recipies} />
+            )}
           </div>
           <button type="submit" className={styles.btn}>
             Search
