@@ -1,5 +1,6 @@
 import "./App.css";
 import { Accordion } from "./components/Accordion";
+import CustomFetchHook from "./components/custom-fetch-hook";
 import GithubProfile from "./components/github-profile";
 import ImageSlider from "./components/ImageSlider";
 import LoadMoreProductss from "./components/LoadMoreProducts";
@@ -30,7 +31,8 @@ function App() {
       {/* <ModalPopup /> */}
       {/* <GithubProfile /> */}
       {/* <SearchAutocomplete /> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      <CustomFetchHook />
     </div>
   );
 }
