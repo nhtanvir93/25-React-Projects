@@ -28,11 +28,11 @@ function App() {
       {/* <ThemeSwitch /> */}
       {/* <ScrollIndicator /> */}
       {/* <Tabs /> */}
-      {/* <ModalPopup /> */}
+      <ModalPopup />
       {/* <GithubProfile /> */}
       {/* <SearchAutocomplete /> */}
       {/* <TicTacToe /> */}
-      <CustomFetchHook />
+      {/* <CustomFetchHook /> */}
     </div>
   );
 }
