@@ -9,6 +9,7 @@ import ModalPopup from "./components/modal-popup";
 import QrCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/RandomColor";
 import ScrollIndicator from "./components/scroll-indicator";
+import Scrolling from "./components/scrolling";
 import SearchAutocomplete from "./components/search-autocomplete";
 import StarRating from "./components/StarRating";
 import Tabs from "./components/tabs";
@@ -34,7 +35,8 @@ function App() {
       {/* <SearchAutocomplete /> */}
       {/* <TicTacToe /> */}
       {/* <CustomFetchHook /> */}
-      <WindowResize />
+      {/* <WindowResize /> */}
+      <Scrolling />
     </div>
   );
 }
